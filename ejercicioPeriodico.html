@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+
+<script>
+function cambiarPeriodico()
+{
+var link_periodico=document.getElementById("periodico").value;
+document.getElementsByTagName("a")[0].href=link_periodico;
+}
+</script>
+</head>
+<body>
+<select id="periodico">
+	<option value="https://www.elmundo.es/">El Mundo</option>
+	<option value="https://elpais.com/">El Pais</option>
+	<option value="https://www.lavanguardia.com/">La Vanguardia</option>
+</select>
+<button onclick="cambiarPeriodico()">CLica para cambiar</button>
+<a href="" >Ir al periódico seleccionado</a>
+</body>
+
+<html>
