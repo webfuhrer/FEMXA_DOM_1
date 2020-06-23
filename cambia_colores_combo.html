@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<script>
+function cambiarColor()
+{
+//var objeto_select=document.getElementById("cars");
+var color_seleccionado=document.getElementById("cars").value;
+//var lista_elementos_h2=document.getElementsByTagName("h2");
+//var elemento_h2=lista_elementos_h2[0];
+//document.getElementsByTagName("h2")[0].style="background-color: "+color_seleccionado;
+//
+//document.getElementsByTagName("h2")[0].style.backgroundColor=color_seleccionado;
+document.getElementsByClassName("miestilo")[0].style.backgroundColor=color_seleccionado;
+}
+
+/*function cambiarColor(color_seleccionado)
+{
+
+var lista_elementos_h2=document.getElementsByTagName("h2");
+var elemento_h2=lista_elementos_h2[0];
+elemento_h2.style="background-color: "+color_seleccionado;
+}*/
+
+</script>
+<body>
+
+<h2 class="miestilo">Esto es un <u>encabezado</u></h2>
+
+<p>The select element defines a drop-down list:</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" onchange="cambiarColor()">
+    <option value="red">Rojo</option>
+    <option value="green">Verde</option>
+    <option value="blue">Azul</option>
+   
+  </select>
+  <input type="submit">
+</form>
+
+</body>
+</html>

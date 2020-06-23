@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script>
+function cambiarEnlace()
+{
+//1-Paso a paso:
+
+
+var objeto_input=document.getElementById("nombre");//Va a ir mi web favorita
+var nombre=objeto_input.value;
+document.getElementById("enlace").href=nombre;
+}
+
+</script>
+<body>
+
+
+<input type="text" id="nombre" placeholder="Escribe tu web favorita">
+<a id="enlace" href="http://www.google.es" >Clicar</a>
+<button onclick="cambiarEnlace();">Clica para cambiar enlace</button>
+</body>
+</html>
