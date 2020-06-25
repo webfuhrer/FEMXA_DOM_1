@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+
+<script>
+function insertarElementoLista()
+{
+var elemento_lista=document.createElement("li");
+elemento_lista.innerHTML=document.getElementById("texto").value;
+document.getElementById("mi_lista").appendChild(elemento_lista);
+document.getElementById("texto").value="";
+document.getElementById("texto").focus();
+}
+
+function teclaPulsada(tecla)
+{
+console.log(tecla.code);
+}
+</script>
+</head>
+<body>
+<input type="text" id="texto" placeholder="Introduzca el texto">
+<button onclick="insertarElementoLista()">CLica para insertarParrafo</button>
+<ol id="mi_lista"></ol>
+</body>
+
+<html>

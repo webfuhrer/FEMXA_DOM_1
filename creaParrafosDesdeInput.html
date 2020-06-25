@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+
+<script>
+function insertarParrafo()
+{
+var elemento_parrafo=document.createElement("p");
+elemento_parrafo.innerHTML=document.getElementById("texto").value;
+document.getElementById("capa_parrafos").appendChild(elemento_parrafo);
+
+}
+
+</script>
+</head>
+<body>
+<input type="text" id="texto" placeholder="Introduzca el texto">
+<button onclick="insertarParrafo()">CLica para insertarParrafo</button>
+<div id="capa_parrafos"></div>
+</body>
+
+<html>
