@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+
+<script>
+function insertarParrafo()
+{
+var elemento_parrafo=document.createElement("p");
+elemento_parrafo.innerHTML="Soy un <u>párrafo</u>";
+elemento_parrafo.onclick=function(){alert("pasaste por encima");};
+document.getElementsByTagName("body")[0].appendChild(elemento_parrafo);
+
+}
+
+</script>
+</head>
+<body>
+
+<button onclick="insertarParrafo()">CLica para insertarParrafo</button>
+</body>
+
+<html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+
+<script>
+function insertarEnlace()
+{
+var elemento_enlace=document.createElement("a");
+elemento_enlace.innerHTML="Clicame";
+elemento_enlace.href="http://www.google.es";
+//elemento_parrafo.onclick=function(){alert("pasaste por encima");};
+//document.getElementsByTagName("body")[0].appendChild(elemento_parrafo);
+document.getElementById("capa_enlaces").appendChild(elemento_enlace);
+}
+
+</script>
+</head>
+<body>
+
+<button onclick="insertarEnlace()">CLica para insertarParrafo</button>
+<div id="capa_enlaces"></div>
+</body>
+
+<html>

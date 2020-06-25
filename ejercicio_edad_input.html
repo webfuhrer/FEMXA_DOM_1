@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+
+
+</head>
+<body>
+<input type="number" id="edad" placeholder="Introduce tu edad">
+<button>Verificar edad</button>
+<p></p>
+</body>
+<script>
+var objeto_input=document.getElementById("edad");
+
+function verificarEdad()
+{
+
+var edad=objeto_input.value;
+if (edad>=18)
+	{
+	document.getElementsByTagName("p")[0].innerText="Entra, bienvenido";
+	}
+	else
+	{
+	document.getElementsByTagName("p")[0].innerText="Espérate unos años";
+	}
+}
+document.getElementsByTagName("button")[0].onclick=function(){verificarEdad()};
+</script>
+<html>

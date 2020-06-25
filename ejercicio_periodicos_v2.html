@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+
+<script>
+function cambiarPeriodico(ruta_periodico)
+{
+/*var link_periodico=document.getElementById("periodico").value;*/
+document.getElementsByTagName("a")[0].href=ruta_periodico;
+var texto_boton=generarTexto(ruta_periodico);
+document.getElementsByTagName("a")[0].innerText=texto_boton;
+}
+
+function generarTexto(ruta)
+{
+var texto="";
+if (ruta.includes("mundo"))
+	{
+	texto="Ir a El Mundo";
+	}
+	else if(ruta.includes("pais"))
+	{
+	texto="Ir a El Pais";
+	}
+	else
+	{
+	texto="Ir a La Vanguardia";
+	}
+	return texto;
+}
+</script>
+</head>
+<body>
+<select id="periodico">
+	<option value="https://www.elmundo.es/">El Mundo</option>
+	<option value="https://elpais.com/">El Pais</option>
+	<option value="https://www.lavanguardia.com/">La Vanguardia</option>
+</select>
+<button onclick="cambiarPeriodico(periodico.value)">CLica para cambiar</button>
+<a href="" >Ir al periódico seleccionado</a>
+</body>
+
+<html>
